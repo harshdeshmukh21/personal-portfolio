@@ -4,7 +4,7 @@ import Spline from "@splinetool/react-spline";
 export const Hero = () => {
   return (
     <div className="flex flex-col justify-center h-screen">
-      <p className="text-8xl text-[#C7C7BB] text-center">
+      <p className="text-7xl text-[#C7C7BB] text-center font-semibold px-8 mt-4">
         Committed to Crafting Intuitive and Modern User-Interfaces.
       </p>
       <Spline

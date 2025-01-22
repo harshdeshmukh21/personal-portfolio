@@ -18,13 +18,13 @@ const AboutMain = () => {
         <Image
           src={Harsh}
           alt={""}
-          height={900}
-          width={500}
+          height={700}
+          width={400}
           className="ml-28"
         ></Image>
         {/* <div className="flex items-center text-center justify-center bg-[#C7C7BB] w-[40vw] h-[62vh]"></div> */}
         <BoxReveal boxColor={"#C7C7BB"} duration={0.5}>
-          <p className="text-9xl text-[#C7C7BB] font-bold mb-10 flex-wrap text-left">
+          <p className="text-8xl text-[#C7C7BB] font-bold mb-10 flex-wrap text-left -mt-2">
             HELLO, MY <br />
             NAME IS
             <p className="bg-[#C7C7BB] text-black w-fit">HARSH</p>
@@ -39,4 +39,4 @@ const AboutMain = () => {
   );
 };
 
-export default AboutMain; 
+export default AboutMain;
