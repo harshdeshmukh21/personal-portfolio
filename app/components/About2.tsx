@@ -39,4 +39,4 @@ const AboutMain = () => {
   );
 };
 
-export default AboutMain;
+export default AboutMain; 
