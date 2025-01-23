@@ -4,6 +4,8 @@ import { WavyBackground } from "@/components/ui/wavy-background";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import Image from "next/image";
 import { TypingAnimation } from "@/components/ui/typing-animation";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import Link from "next/link";
 
 const About3 = () => {
   return (
@@ -40,11 +42,10 @@ const About3 = () => {
           />
         </a>
       </ContainerScroll>
-      <div className="mb-10 text-center -mt-64">
-        <p className="text-[#C7C7BB] text-5xl px-60 text-center font-medium pb-8 -mt-2">
+      <div className="mb-10 text-center -mt-72">
+        <p className="text-[#C7C7BB] text-5xl px-60 text-center font-medium pb-4 mt-4">
           We build amazing websites here at 1PX.
         </p>
-
         <p className="text-[#C7C7BB] text-[21px] px-60 text-center font-extralight">
           1PX Labs is a web development agency started by me and my 2
           classmates. We craft scalable, innovative products for ambitious
@@ -54,7 +55,11 @@ const About3 = () => {
           develop it all!
         </p>
       </div>
-      ;
+      <Link href="https://onepx.in/" target="_blank" rel="noopener noreferrer">
+        <button className="text-black text-1xl bg-[#C7C7BB] rounded-[40px] py-2 px-8 mb-4">
+          Visit Now
+        </button>
+      </Link>
     </div>
   );
 };
