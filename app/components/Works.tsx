@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Carousel from "@/components/ui/carousel";
 import fasttap from "../../assets/FastTap.png";
@@ -10,22 +12,26 @@ const Works = () => {
     {
       title: "FastTap Solutions",
       button: "Explore",
-      src: fasttap.src, // Use .src to convert StaticImageData to string
+      src: fasttap.src,
+      path: "/works/fasttap",
     },
     {
       title: "Deshmukh Enterprises",
       button: "Explore",
       src: de.src,
+      path: "/works/deshmukhent",
     },
     {
       title: "Bayrack Clothing",
       button: "Explore",
       src: bayrack.src,
+      path: "/works/bayrack",
     },
     {
       title: "Quasar",
       button: "Explore",
       src: quasar.src,
+      path: "/works/quasar",
     },
   ];
 
@@ -34,7 +40,14 @@ const Works = () => {
       <h1 className="text-center text-8xl py-10 font-semibold text-[#C7C7BB]">
         Works
       </h1>
-      <Carousel slides={slideData} />
+      <Carousel
+        slides={slideData}
+        onExplore={(slide) => {
+          if (slide.path) {
+            window.location.href = slide.path;
+          }
+        }}
+      />
     </div>
   );
 };

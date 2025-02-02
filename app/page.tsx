@@ -6,6 +6,7 @@ import AboutMain from "./components/About2";
 import About3 from "./components/About3";
 import About4 from "./components/About4";
 import Works from "./components/Works";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <About3></About3>
       <About4></About4>
       <Works></Works>
+      {/* <Contact></Contact> */}
     </div>
   );
 }
