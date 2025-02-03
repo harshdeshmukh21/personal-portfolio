@@ -18,7 +18,7 @@ export default function Home() {
       <About3></About3>
       <About4></About4>
       <Works></Works>
-      {/* <Contact></Contact> */}
+      <Contact></Contact>
     </div>
   );
 }
