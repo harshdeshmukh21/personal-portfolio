@@ -62,6 +62,12 @@ body {
   }
 }
 
+.bg-hero {
+  background-image: url("../assets/galaxy-rollercoaster.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @layer base {
   * {
     @apply border-border;

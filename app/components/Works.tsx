@@ -36,7 +36,7 @@ const Works = () => {
   ];
 
   return (
-    <div className="relative w-full h-full py-20">
+    <div className="relative w-full h-full py-20" id="works">
       <h1 className="text-center text-8xl py-10 font-semibold text-[#C7C7BB]">
         Works
       </h1>

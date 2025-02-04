@@ -11,7 +11,7 @@ const Page = () => {
     <div className="bg-black min-h-screen">
       <Navbar />
       <div className="container mx-auto max-w-7xl px-4">
-        <div className="flex flex-col lg:flex-row pt-24 md:pt-28 pb-16 gap-12">
+        <div className="flex flex-col lg:flex-row pt-24 md:pt-48 pb-16 gap-12">
           {/* Left Section - Sticky */}
           <div className="w-full lg:w-2/5">
             <div className="flex flex-col gap-8 lg:sticky lg:top-32">

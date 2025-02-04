@@ -8,7 +8,10 @@ const texts = ["DESIGNER", "DEVELOPER", "FOUNDER"];
 
 const AboutMain = () => {
   return (
-    <div className="flex-col items-center text-center py-10 justify-center">
+    <div
+      className="flex-col items-center text-center py-10 justify-center"
+      id="about"
+    >
       {/* <BoxReveal boxColor={"#C7C7BB"} duration={0.5}>
         <p className="text-[3.5rem] text-[#C7C7BB] font-normal mb-10">
           Hey, I am Harsh Deshmukh<span className="text-[#C7C7BB]">.</span>
