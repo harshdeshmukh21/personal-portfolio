@@ -4,6 +4,7 @@ import Image from "next/image";
 import cube from "../../assets/cube.png";
 import { ShinyButton } from "@/components/ui/shiny-button";
 import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
+import Link from "next/link";
 
 const Contact = () => {
   const handleScroll = (targetId: string) => {
@@ -30,7 +31,13 @@ const Contact = () => {
           Hopefully I've convinced you to work with me!
         </h1>
         <p className="max-w-lg text-[#C7C7BB] text-center mx-auto py-8">
-          <InteractiveHoverButton>Lets Connect</InteractiveHoverButton>
+          <a
+            href="https://cal.com/harshdeshmukh21"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <InteractiveHoverButton>Let's Connect</InteractiveHoverButton>
+          </a>
         </p>
       </div>
 

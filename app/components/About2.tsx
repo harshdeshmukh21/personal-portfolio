@@ -9,34 +9,45 @@ const texts = ["DESIGNER", "DEVELOPER", "FOUNDER"];
 const AboutMain = () => {
   return (
     <div
-      className="flex-col items-center text-center py-10 justify-center"
+      className="flex flex-col items-center py-6 md:py-10 px-4 md:px-8"
       id="about"
     >
-      {/* <BoxReveal boxColor={"#C7C7BB"} duration={0.5}>
-        <p className="text-[3.5rem] text-[#C7C7BB] font-normal mb-10">
-          Hey, I am Harsh Deshmukh<span className="text-[#C7C7BB]">.</span>
-        </p>
-      </BoxReveal> */}
-      <div className="flex flex-row justify-left items-start space-x-10">
-        <Image
-          src={Harsh}
-          alt={""}
-          height={700}
-          width={400}
-          className="ml-28"
-        ></Image>
-        {/* <div className="flex items-center text-center justify-center bg-[#C7C7BB] w-[40vw] h-[62vh]"></div> */}
-        <BoxReveal boxColor={"#C7C7BB"} duration={0.5}>
-          <p className="text-8xl text-[#C7C7BB] font-bold mb-10 flex-wrap text-left -mt-2">
-            HELLO, MY <br />
-            NAME IS
-            <p className="bg-[#C7C7BB] text-black w-fit">HARSH</p>
-            I AM A<MorphingText texts={texts} className="-mb-24" />
-            <br />
-            FROM <br />
-            MUMBAI, INDIA.
-          </p>
-        </BoxReveal>
+      <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-6 lg:gap-10 w-full max-w-7xl">
+        <div className="w-full lg:w-auto">
+          <Image
+            src={Harsh}
+            alt="Harsh Deshmukh"
+            height={700}
+            width={400}
+            className="w-full max-w-[300px] md:max-w-[400px] mx-auto lg:ml-28 object-cover"
+            priority
+          />
+        </div>
+
+        <div className="w-full lg:w-auto">
+          <BoxReveal boxColor={"#C7C7BB"} duration={0.5}>
+            <div className="text-4xl sm:text-6xl lg:text-8xl text-[#C7C7BB] font-bold text-center lg:text-left">
+              <p className="mb-2">
+                HELLO, MY <br className="hidden sm:block" />
+                NAME IS
+              </p>
+              <p className="bg-[#C7C7BB] text-black w-fit mx-auto lg:mx-0 px-2">
+                HARSH
+              </p>
+              <p className="mt-2">
+                I AM A
+                <MorphingText
+                  texts={texts}
+                  className="-mb-24 text-3xl sm:text-5xl lg:text-7xl"
+                />
+              </p>
+              <p className="mt-2">
+                FROM <br />
+                MUMBAI, INDIA.
+              </p>
+            </div>
+          </BoxReveal>
+        </div>
       </div>
     </div>
   );
